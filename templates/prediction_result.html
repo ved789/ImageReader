@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body {
+          background-color: #E6E6FA;
+        }
+    </style>
+</head>
+<body style="text-align: center;">
+    <div class="form-group">
+        <h4>
+            Predicted class is : "{{predicted_class}}" with probability {{probability}}
+        </h4> 
+    </div>
+    <div class="form-group">
+        <a href="/" class="btn btn-outline-primary">Home page</a>
+    </div>
+    <br />
+    <div class="form-group">
+        <img src="{{url_for('static', filename=image_name)}}" alt="" width="500" height="600" class="rounded img-fluid">
+    </div>
+</body>
+</html>
